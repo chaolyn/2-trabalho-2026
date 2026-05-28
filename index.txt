@@ -2,4 +2,5 @@ link da imagem da navbar as poches do index https://www.24h-rennen.de/en/2025/06
 link bmw do index https://pt.wikipedia.org/wiki/Ficheiro:BMW_Hydrogen_7_%2832402740931%29.jpg
 link do protipo alpine a navbar evolução dos protótipos https://www.autocar.co.uk/car-news/new-cars/alpines-hydrogen-v6-hypercar-could-make-production
 link para a foto do mazda hrx https://pt.wikipedia.org/wiki/Ficheiro:Mazda_HR-X.JPG
-link do masda rx8 re https://pt.wikipedia.org/wiki/Ficheiro:Mazda_RX8_hydrogen_rotary_car_1.jpg
+link do mazda rx8 re https://pt.wikipedia.org/wiki/Ficheiro:Mazda_RX8_hydrogen_rotary_car_1.jpg
+link do yaris gr https://fuelcellsworks.com/news/toyota-showcases-hydrogen-powered-gr-yaris-at-2024-goodwood-festival-of-speed
