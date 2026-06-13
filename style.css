@@ -1,23 +1,39 @@
+.conteudo {
+    background-image: url('Gemini_Generated_Image_zbgyv1zbgyv1zbgy.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 110vh;
+ 
+}
+
+
+
+
+
 nav {
     position: relative;
-    height: 200px;
+    height: 280px;
     overflow: hidden;
 }
 
 
-img {
-    position: absolute;
-    border: 5px solid red;
+nav img {
+ position: absolute;
+   
   width: 100%;
-  height: 280px;
+  height: 300px;
   object-fit: cover;
-  object-position: 100% center;
+  object-position: center 90%;
 }
 
 nav h1 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Intel+One+Mono', monospace;
+    padding: 5px 75px;
     position: absolute;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); 
     top: 0;
     left: 0;
     color: white;
@@ -30,7 +46,8 @@ nav h1 {
         left: 0;
         width: 100%;
         justify-content: space-around;
-
+        background-color: rgba(0, 0, 0, 0.5); 
+        padding: 10px 20px;
         display: flex;
         gap: 10px;
     }   
@@ -40,4 +57,73 @@ nav h1 {
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Space Mono', monospace;
+}
+
+
+.conteudo h2 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5em;
+}
+
+.conteudo .subtitulo {
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+.conteudo .texto-principal {
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Substituído <weight> por 400 */
+    font-style: normal;
+}
+
+
+
+
+
+.conteudo p {
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color: white;
+    text-align: center;
+   
+}
+
+
+
+.texto-principal {
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.9);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Space Mono', monospace;
+    color: white;
+    text-align: center;
+}
+
+/* O seletor '.imagem img' atinge diretamente a foto da BMW */
+.imagem img {
+    width: 700px; 
+    height: 400px; 
+    object-fit: cover;
+    border: 2px solid white;
+    
+    /* Comandos para centralizar */
+    display: block; 
+    margin: 0 auto; 
+    
+    /* Respiro entre o texto e a imagem */
+    margin-top: 30px; 
+    
+    /* Dica: Adiciona bordas arredondadas para um visual mais moderno! (Opcional) */
+    border-radius: 15px; 
 }
