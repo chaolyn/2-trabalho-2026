@@ -3,8 +3,8 @@
     background-size: cover;
     background-position: center;
     min-height: 110vh;
- 
 }
+
 
 
 
@@ -17,14 +17,20 @@ nav {
 }
 
 
+
 nav img {
  position: absolute;
-   
   width: 100%;
   height: 300px;
   object-fit: cover;
   object-position: center 90%;
 }
+
+.container{
+    position: relative;
+    top: -31px
+}
+
 
 nav h1 {
     margin: 0;
@@ -33,12 +39,13 @@ nav h1 {
     padding: 5px 75px;
     position: absolute;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
     color: white;
     font-size: 2.5em;
 }
+
 
 .nav-links {
         position: absolute;
@@ -46,11 +53,12 @@ nav h1 {
         left: 0;
         width: 100%;
         justify-content: space-around;
-        background-color: rgba(0, 0, 0, 0.5); 
+        background-color: rgba(0, 0, 0, 0.5);
         padding: 10px 20px;
         display: flex;
         gap: 10px;
-    }   
+    }  
+
 
 .nav-links a {
     color: white;
@@ -58,6 +66,7 @@ nav h1 {
     text-transform: uppercase;
     font-family: 'Space Mono', monospace;
 }
+
 
 
 .conteudo h2 {
@@ -70,6 +79,7 @@ nav h1 {
     font-size: 2.5em;
 }
 
+
 .conteudo .subtitulo {
     font-family: "Josefin Slab", serif;
     font-optical-sizing: auto;
@@ -78,12 +88,8 @@ nav h1 {
     font-size: 1.5em;
 }
 
-.conteudo .texto-principal {
-    font-family: "Josefin Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: 400; /* Substituído <weight> por 400 */
-    font-style: normal;
-}
+
+
 
 
 
@@ -94,36 +100,32 @@ nav h1 {
     font-family: 'Space Mono', monospace;
     color: white;
     text-align: center;
-   
 }
 
 
 
-.texto-principal {
+
+.conteudo .texto-principal {
     border: 2px solid white;
     background-color: rgba(0, 0, 0, 0.9);
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    font-family: 'Space Mono', monospace;
+    font-family: "Josefin Slab", serif;
+    font-weight: 400; 
     color: white;
     text-align: center;
 }
 
-/* O seletor '.imagem img' atinge diretamente a foto da BMW */
+
+
 .imagem img {
+    border: 2px solid white;
     width: 700px; 
     height: 400px; 
-    object-fit: cover;
-    border: 2px solid white;
-    
-    /* Comandos para centralizar */
+    object-fit: cover; 
     display: block; 
-    margin: 0 auto; 
-    
-    /* Respiro entre o texto e a imagem */
+    margin: 0 auto;  
     margin-top: 30px; 
-    
-    /* Dica: Adiciona bordas arredondadas para um visual mais moderno! (Opcional) */
     border-radius: 15px; 
 }
