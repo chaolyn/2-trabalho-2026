@@ -56,5 +56,8 @@ body{
     width: 800px;  
     height: auto;
     align-items: center;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
 
 }
