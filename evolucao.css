@@ -52,12 +52,152 @@ body{
     background-color: #10142A;
 }
 
-.linha-do-tempo img {
+.Mazda_HR-X {
+    position: relative;     
+    width: 100%;
+    display: flex;
+    justify-content: end; 
+    margin: 40px 5%;        
+    padding: 20px 0;
+    top: -1600px;
+    border-color: 4px solid rgb(11, 69, 117);
+    
+}
+
+
+
+
+.Mazda_HR-X img {
+    border-color: 4px solid rgb(11, 69, 117);
+    left: 817px;
+    margin: 215px;
     width: 400px;  
     height: auto;
     align-items: center;
     position: absolute;
     object-fit: cover;
     object-position: center;
+
+}
+
+
+.linha-do-tempo {
+    position: relative;     
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin: 40px 0;        
+    padding: 20px 0;
+}
+
+.linha-do-tempo img {
+    width: 100px;           
+    height: auto;
+    object-fit: cover;
+   
+}
+
+
+.conteudo1 {
+    nav img {
+ position: absolute;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center 60%;
+}
+
+.voltar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+    justify-content: flex-start; 
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center; 
+    box-sizing: border-box; 
+}
+
+.voltar a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+nav h1 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Intel+One+Mono', monospace;
+    padding: 5px 75px;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    top: 0;
+    left: 0;
+    color: black;
+    font-size: 2.5em;
+}
+
+nav {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+}
+
+body{
+    background-color: #10142A;
+}
+
+.Mazda_HR-X {
+    position: relative;     
+    width: 100%;
+    display: flex;
+    justify-content: end; 
+    margin: 40px 5%;        
+    padding: 20px 0;
+    top: -1600px;
+    border-color: rgb(11, 69, 117);
+}
+
+
+
+
+.Mazda_HR-X img {
+    border-color: rgb(11, 69, 117);
+    left: 817px;
+    margin: 215px;
+    width: 400px;  
+    height: auto;
+    align-items: center;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+
+.linha-do-tempo {
+    position: relative;     
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin: 40px 0;        
+    padding: 20px 0;
+}
+
+.conteudo1 {
+    position: relative;     
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin: 40px 0;        
+    padding: 20px 0;
+   
+}
 
 }
