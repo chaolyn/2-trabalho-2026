@@ -1,198 +1,299 @@
-nav img {
- position: absolute;
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  object-position: center 60%;
-}
-
-.voltar {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    
-    justify-content: flex-start; 
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px 20px;
-    display: flex;
-    align-items: center; 
-    box-sizing: border-box; 
-}
-
-.voltar a {
-    color: black;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-weight: bold;
-}
-
-
-nav h1 {
+/* ===== RESET ===== */
+* {
     margin: 0;
-    text-align: center;
-    font-family: 'Intel+One+Mono', monospace;
-    padding: 5px 75px;
-    position: absolute;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
-    top: 0;
-    left: 0;
-    color: black;
-    font-size: 2.5em;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    background-color: #0a0e1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* ===== NAVBAR ===== */
 nav {
     position: relative;
-    height: 280px;
+    width: 100%;
+    height: 260px;
     overflow: hidden;
 }
 
-body{
-    background-color: #10142A;
-}
-
-.Mazda_HR-X {
-    position: relative;     
+.nav-banner {
     width: 100%;
-    display: flex;
-    justify-content: end; 
-    margin: 40px 5%;        
-    padding: 20px 0;
-    top: -1600px;
-    border-color: 4px solid rgb(11, 69, 117);
-    
+    height: 100%;
 }
 
-
-
-
-.Mazda_HR-X img {
-    border-color: 4px solid rgb(11, 69, 117);
-    left: 817px;
-    margin: 215px;
-    width: 400px;  
-    height: auto;
-    align-items: center;
-    position: absolute;
+.banner-img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: center;
-
+    object-position: center 60%;
 }
 
-
-.linha-do-tempo {
-    position: relative;     
+.nav-content {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center; 
-    margin: 40px 0;        
-    padding: 20px 0;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 30px 20px 30px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+nav h1 {
+    font-family: 'Intel One Mono', 'Courier New', monospace;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.voltar {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.voltar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 6px 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.3s;
+}
+
+.voltar a:hover {
+    background: rgba(11, 69, 117, 0.8);
+    border-color: #0B4575;
+}
+
+/* ===== LINHA DO TEMPO ===== */
+.linha-do-tempo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0 15px 0;
+    width: 100%;
 }
 
 .linha-do-tempo img {
-    width: 100px;           
+    max-width: 85%;
     height: auto;
-    object-fit: cover;
-   
+    max-height: 60px;
+    object-fit: contain;
 }
 
-.conteudo1{
-    position: relative;
-    top: -250px;
-    width: 100%;
-    color: white;
-    text-align: left;
-    padding: 20px;
+/* ===== GRADE DE CARDS ===== */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 10px auto 40px auto;
+    padding: 0 25px;
 }
 
-
-
-
-.voltar {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    
-    justify-content: flex-start; 
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px 20px;
-    display: flex;
-    align-items: center; 
-    box-sizing: border-box; 
-}
-
-.voltar a {
-    color: black;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-weight: bold;
-}
-
-
-nav h1 {
-    margin: 0;
-    text-align: center;
-    font-family: 'Intel+One+Mono', monospace;
-    padding: 5px 75px;
-    position: absolute;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
-    top: 0;
-    left: 0;
-    color: black;
-    font-size: 2.5em;
-}
-
-nav {
-    position: relative;
-    height: 280px;
+/* ===== CARD INDIVIDUAL ===== */
+.card {
+    background: rgba(255, 255, 255, 0.04);
+    border-left: 4px solid #0B4575;
+    border-radius: 8px;
     overflow: hidden;
-}
-
-body{
-    background-color: #10142A;
-}
-
-.Mazda_HR-X {
-    position: relative;     
-    width: 100%;
     display: flex;
-    justify-content: end; 
-    margin: 40px 5%;        
-    padding: 20px 0;
-    top: -1600px;
-    border-color: rgb(11, 69, 117);
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.3s;
 }
 
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
 
+.card-imagem {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    background: #11162b;
+}
 
-
-.Mazda_HR-X img {
-    border-color: rgb(11, 69, 117);
-    left: 817px;
-    margin: 215px;
-    width: 400px;  
-    height: auto;
-    align-items: center;
-    position: absolute;
+.card-imagem img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: center;
-
+    transition: transform 0.4s;
 }
 
+.card:hover .card-imagem img {
+    transform: scale(1.04);
+}
 
-.linha-do-tempo {
-    position: relative;     
-    width: 100%;
+.card-conteudo {
+    padding: 16px 20px 20px 20px;
     display: flex;
-    justify-content: center; 
-    margin: 40px 0;        
-    padding: 20px 0;
+    flex-direction: column;
+    flex: 1;
 }
 
+.card-conteudo h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
 
+.card-conteudo .produto {
+    font-size: 0.8rem;
+    color: #aab;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
 
+.card-conteudo .ano {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #4a9eff;
+    margin: 2px 0;
+}
 
-    
+.card-conteudo .detalhe {
+    font-size: 0.85rem;
+    color: #b0c8ff;
+    background: rgba(11, 69, 117, 0.25);
+    display: inline-block;
+    padding: 2px 12px;
+    border-radius: 14px;
+    margin: 4px 0 8px 0;
+    align-self: flex-start;
+}
+
+.card-conteudo .descricao {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #c8d0e0;
+    margin-top: 4px;
+}
+
+/* ===== RESPONSIVO ===== */
+
+/* Tablets */
+@media (max-width: 900px) {
+    .cards-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 0 20px;
+    }
+}
+
+/* Celular grande / tablets pequenos */
+@media (max-width: 700px) {
+    nav {
+        height: 200px;
+    }
+
+    nav h1 {
+        font-size: 1.6rem;
+        padding: 0 10px;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+        max-width: 600px;
+    }
+
+    .card-imagem {
+        height: 150px;
+    }
+
+    .linha-do-tempo img {
+        max-height: 40px;
+        max-width: 95%;
+    }
+}
+
+/* Celular pequeno */
+@media (max-width: 480px) {
+    nav {
+        height: 160px;
+    }
+
+    nav h1 {
+        font-size: 1.2rem;
+        margin-top: 4px;
+    }
+
+    .nav-content {
+        padding: 10px 15px 12px 15px;
+    }
+
+    .voltar a {
+        font-size: 0.8rem;
+        padding: 4px 14px;
+    }
+
+    .card-conteudo h2 {
+        font-size: 1.1rem;
+    }
+
+    .card-conteudo .descricao {
+        font-size: 0.78rem;
+    }
+
+    .card-imagem {
+        height: 130px;
+    }
+
+    .linha-do-tempo {
+        padding: 12px 0 8px 0;
+    }
+
+    .linha-do-tempo img {
+        max-height: 32px;
+    }
+}
+
+/* ===== IMAGEM DUPLA (Toyota GR Yaris + Corolla) ===== */
+.card-imagem.dupla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    height: 180px;
+}
+
+.card-imagem.dupla img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-imagem.dupla .img-esquerda {
+    border-right: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsivo para imagem dupla */
+@media (max-width: 700px) {
+    .card-imagem.dupla {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-imagem.dupla {
+        height: 130px;
+    }
+}
